@@ -51,7 +51,7 @@ function imageLoad(){
 }
 
 function startup() {
-    if (window.matchMedia( "(min-width: 400px)" ).matches) {
+    if (window.matchMedia( "(min-width: 500px)" ).matches) {
         document.querySelector('body').innerHTML='申し訳ございません、このサイトはスマホ専用です。。';
         return 
       }
