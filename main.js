@@ -52,10 +52,8 @@ function imageLoad(){
 
 function startup() {
     if (window.matchMedia( "(min-width: 400px)" ).matches) {
-        
-      } else {
-        document.querySelector('body').innerHTML='このサイトはPCでの閲覧を推奨しています。';
-        return
+        document.querySelector('body').innerHTML='申し訳ございません、このサイトはスマホ専用です。。';
+        return 
       }
     canvas.addEventListener('touchstart', handleStart);
     canvas.addEventListener('touchend', handleEnd);
