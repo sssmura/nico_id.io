@@ -51,6 +51,12 @@ function imageLoad(){
 }
 
 function startup() {
+    if (window.matchMedia( "(min-width: 400px)" ).matches) {
+        
+      } else {
+        document.querySelector('body').innerHTML='このサイトはPCでの閲覧を推奨しています。';
+        return
+      }
     canvas.addEventListener('touchstart', handleStart);
     canvas.addEventListener('touchend', handleEnd);
     canvas.addEventListener('touchcancel', handleCancel);
